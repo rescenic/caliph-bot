@@ -2,6 +2,8 @@
 
 
 # Cara Penginstalan
+
+# termux
 ```
 > pkg install git
 > git clone https://github.com/caliph71/base-wabot
@@ -9,6 +11,7 @@
 > bash install.sh
 > node index
 ```
+
 
 Masih Gapaham/Error ?
 
