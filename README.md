@@ -1,0 +1,2 @@
+# base-wabot
+Bot weah
