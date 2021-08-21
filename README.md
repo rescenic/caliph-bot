@@ -5,7 +5,7 @@
 ```
 > pkg install git
 > git clone https://github.com/caliph71/bot-wa
-> cd base-wabot
+> cd bot-wa
 > bash install.sh
 > node index
 ```
