@@ -11,7 +11,11 @@
 ```
 
 Masih Gapaham/Error ?
+
 Chat Me On 
 [`WhatsApp`](https://wa.me/994400944782)
 
-[`@caliph71`](https://caliph71.xyz)
+
+
+Created By [`@caliph71`](https://caliph71.xyz)
+
