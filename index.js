@@ -25,7 +25,7 @@ console.log(color(figlet.textSync('Base Wabot', {
 		width: 80,
 		whitespaceBreak: false
 	}), 'cyan'))
-console.log(color('[ CREATED BY Caliph71 ]')
+console.log(color('[ CREATED BY Caliph71 ]'))
 caliph.on('qr', async () => {
 console.log('Scan kode qr ini untuk menjalankan bot')
 })
