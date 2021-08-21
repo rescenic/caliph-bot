@@ -2,8 +2,6 @@
 
 
 # Cara Penginstalan
-
-# termux
 ```
 > pkg install git
 > git clone https://github.com/caliph71/base-wabot
