@@ -4,7 +4,7 @@
 # Cara Penginstalan
 ```
 > pkg install git
-> git clone https://github.com/caliph71/base-wabot
+> git clone https://github.com/caliph71/bot-wa
 > cd base-wabot
 > bash install.sh
 > node index
