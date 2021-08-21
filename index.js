@@ -13,7 +13,7 @@ let fs = require('fs')
 let os = require('os')
 let figlet = require('figlet')
 let authfile = './session.json'
-async function memek() {
+async function mulai() {
 
 let caliph = new WAPI()
 caliph.browserDescription = Browsers.appropriate('Desktop')
@@ -116,5 +116,5 @@ fs.watchFile(file, () => {
   require(file)
 })
 
-memek()
+mulai()
 _quickTest()
