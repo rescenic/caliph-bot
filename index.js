@@ -11,13 +11,21 @@ const simple = require('./lib/simple.js')
 const WAPI = simple.WAConnection(WAConnection)
 let fs = require('fs')
 let os = require('os')
+let figlet = require('figlet')
 let authfile = './session.json'
 async function memek() {
 
 let caliph = new WAPI()
 caliph.browserDescription = Browsers.appropriate('Desktop')
 caliph.logger.level = 'warn'
-
+console.log(color(figlet.textSync('Base Wabot', {
+		font: 'Standard',
+		horizontalLayout: 'default',
+		vertivalLayout: 'default',
+		width: 80,
+		whitespaceBreak: false
+	}), 'cyan'))
+console.log(color('[ CREATED BY Caliph71 ]')
 caliph.on('qr', async () => {
 console.log('Scan kode qr ini untuk menjalankan bot')
 })
@@ -32,7 +40,7 @@ fs.existsSync(authfile) && caliph.loadAuthInfo(authfile)
 		console.log(color('[Caliph71]', 'cyan'), color('Connected...', 'green'))
 	})
 	await caliph.connect().then(async v => {
-	console.log(`Nama Bot : ${caliph.user.name}\nID Bot : ${awesome('+'+caliph.user.jid.split('@')[0]).getNumber('international')}\nHostname : ${os.hostname()}`)
+	console.log(`Nama Bot : ${caliph.user.name}\nID Bot : ${awesome('+'+caliph.user.jid.split('@')[0]).getNumber('international')}\n\nMode : ${selfmode ? 'Self Mode' : 'Public Mode'}\nHostname : ${os.hostname()}`)
 		fs.writeFileSync(authfile, JSON.stringify(caliph.base64EncodedAuthInfo(), null, '\t'))
 		})
     caliph.on('CB:action,,call', id => {
@@ -52,7 +60,8 @@ fs.existsSync(authfile) && caliph.loadAuthInfo(authfile)
     try {
      if (!chatUpdate.hasNewMessage) return   
      if (!chatUpdate.messages && !chatUpdate.count) return
-     let msg = chatUpdate.messages.all()[0]
+    
+ let msg = chatUpdate.messages.all()[0]
 	 if (!msg.message) return
      msg.message = msg.message.hasOwnProperty('ephemeralMessage') ? msg.message.ephemeralMessage.message : msg.message
 	if (msg.key && msg.key.remoteJid == 'status@broadcast') return 
