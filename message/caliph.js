@@ -83,6 +83,10 @@ m.reply(util.format(ev))
 m.reply(util.format(e))
 }
 break
+case 'sc': 
+case 'script':
+m.reply(`Bot ini menggunakan script :\nhttps://github.com/caliph71/bot-wa`)
+break
 case prefix+'kick': 
 if (!m.isGroup) return m.reply('Perintah ini khusus didalam grup!')
 if (!isAdmin) return m.reply('Perintah ini khusus admin grup!')
