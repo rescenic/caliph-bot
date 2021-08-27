@@ -338,7 +338,7 @@ if(owner.length == 1) return caliph.sendContact(m.chat, owner[0], caliph.getName
 caliph.sendContactArray(m.chat, owner.map(a => a + '@s.whatsapp.net'),{ quoted: m })
 break
 default: 
-if (isCmd) m.reply(`Command *${command}* not found`)
+//if (isCmd) m.reply(`Command *${command}* not found`)
 }
 
 } catch (e) {
