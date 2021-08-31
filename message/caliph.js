@@ -163,7 +163,7 @@ case prefix+'ttp':
   break
   case prefix+'attp':
   if (!args[0]) return m.reply('Teksnya?')
-  let res = await sticker(null, `https://api.xteam.xyz/attp?text=${encodeURIComponent(args.join(' '))}&file`, packname, author)
+  let res = await sticker(null, `https://api.xteam.xyz/attp?file&text=${encodeURIComponent(args.join(' '))}`, packname, author)
   caliph.sendMessage(m.chat, res, mType.sticker, { quoted: m })
   break
 case prefix+'toimg':
