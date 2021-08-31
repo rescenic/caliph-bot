@@ -12,7 +12,7 @@ let chalk = require('chalk')
 let getBuffer = require('../lib/fetcher').buffer
 let tahta = require('../lib/tahta')
 let {
-messageType: mType 
+messageType 
 } = require('@adiwajshing/baileys')
 let { sticker } = require('../lib/sticker')
 let antidelete = JSON.parse(fs.readFileSync('./database/chat/antidelete.json').toString())
@@ -164,7 +164,7 @@ case prefix+'ttp':
   case prefix+'attp':
   if (!args[0]) return m.reply('Teksnya?')
   let res = await sticker(null, `https://api.xteam.xyz/attp?file&text=${encodeURIComponent(args.join(' '))}`, packname, author)
-  caliph.sendMessage(m.chat, res, mType.sticker, { quoted: m })
+  caliph.sendMessage(m.chat, res, messageType.sticker, { quoted: m })
   break
 case prefix+'toimg':
 case prefix+'stoimg':
