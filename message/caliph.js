@@ -359,6 +359,7 @@ default:
 } catch (e) {
 caliph.reply(m.chat, 'Ada Yang Error!', m)
 owner.map(a => caliph.reply(a + '@c.us', util.format(e)))
+ continue
 }
 }
 let file = require.resolve(__filename)
