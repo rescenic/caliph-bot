@@ -13,7 +13,7 @@ let getBuffer = require('../lib/fetcher').buffer
 let tahta = require('../lib/tahta')
 let {
 messageType: mType 
-} = require{'@adiwajshing/baileys')
+} = require('@adiwajshing/baileys')
 let { sticker } = require('../lib/sticker')
 let antidelete = JSON.parse(fs.readFileSync('./database/chat/antidelete.json').toString())
 let welcome = JSON.parse(fs.readFileSync('./database/chat/welcome.json').toString())
