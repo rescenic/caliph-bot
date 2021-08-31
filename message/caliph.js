@@ -9,6 +9,7 @@ Author : Caliph71
 let util = require('util')
 let fs = require('fs')
 let chalk = require('chalk')
+let getBuffer = require('../lib/fetcher').buffer
 let tahta = require('../lib/tahta')
 let antidelete = JSON.parse(fs.readFileSync('./database/chat/antidelete.json').toString())
 let welcome = JSON.parse(fs.readFileSync('./database/chat/welcome.json').toString())
@@ -158,7 +159,7 @@ case prefix+'ttp':
   break
   case prefix+'attp':
   if (!args[0]) return m.reply('Teksnya?')
-  caliph.sendSticker(m.chat, `https://api.xteam.xyz/attp?text=${encodeURIComponent(args.join(' '))}&file`, m, { packname, author })
+  caliph.sendSticker(m.chat, await getBuffer(`https://api.xteam.xyz/attp?text=${encodeURIComponent(args.join(' '))}&file`), m, { packname, author })
   break
 case prefix+'toimg':
 case prefix+'stoimg':
