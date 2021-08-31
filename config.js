@@ -13,7 +13,7 @@ success: 'Sukses...'
 }
 global.prefix = '🐤'
 global.author = '@caliph91_'
-global.packname = 'Siesta Bot'
+global.packname = 'WhatsApp Bot'
 
 let fs = require('fs')
 let chalk = require('chalk')
