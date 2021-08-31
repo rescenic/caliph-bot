@@ -63,6 +63,8 @@ Owner Menu
 Other Menu
 - ${prefix}toimg (reply sticker)
 - ${prefix}tahta (teks)
+- ${prefix}ttp (teks)
+- ${prefix}attp (teks)
 - ${prefix}sticker (reply image/video)
 `.trim())
 break
