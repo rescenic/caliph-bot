@@ -59,6 +59,11 @@ Owner Menu
 - ${prefix}join linkgroup
 - > JavaScript Code
 - => JavaScript Code
+
+Other Menu
+- ${prefix}toimg (reply sticker)
+- ${prefix}tahta (teks)
+- ${prefix}sticker (reply image/video)
 `.trim())
 break
 case '>':
@@ -145,6 +150,14 @@ json = m.quoted ? m.quoted : m
 if (!/image|video/.test(json.mtype)) return m.reply(`Balas Video/Gambar dengan caption *${prefix + command}*!`)
 caliph.sendSticker(m.chat, await json.download(), m, { packname, author })
 break
+case prefix+'ttp':
+  if (!args[0]) return m.reply('Teksnya?')
+  caliph.sendSticker(m.chat, `https://api.xteam.xyz/ttp?text=${encodeURIComponent(args.join(' '))}&file`, m, { packname, author })
+  break
+  case prefix+'attp':
+  if (!args[0]) return m.reply('Teksnya?')
+  caliph.sendSticker(m.chat, `https://api.xteam.xyz/attp?text=${encodeURIComponent(args.join(' '))}&file`, m, { packname, author })
+  break
 case prefix+'toimg':
 case prefix+'stoimg':
 if (m.quoted && m.quoted.mtype !== 'stickerMessage') return caliph.reply(m.chat, 'Reply stikernya..', m)
