@@ -9,6 +9,8 @@
   "dependencies": {
     "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "awesome-phonenumber": "^2.57.0",
+    "cookie": "0.4.0",
+    "cheerio": " 1.0.0-rc.10",
     "file-type": "^16.5.3",
     "form-data": "^4.0.0",
     "moment": "^2.29.1",
@@ -18,7 +20,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "caliph71",
   "license": "ISC"
