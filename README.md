@@ -14,7 +14,7 @@
 Masih Gapaham/Error ?
 
 Chat Me On 
-[`WhatsApp`](https://wa.me/994400944782)
+[`WhatsApp`](https://wa.me/19499421902)
 
 
 
